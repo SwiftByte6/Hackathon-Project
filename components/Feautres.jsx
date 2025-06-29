@@ -3,6 +3,7 @@ import { TiMicrophoneOutline } from "react-icons/ti";
 import { LuBrain } from "react-icons/lu";
 import { AiOutlineThunderbolt } from "react-icons/ai";
 import { IoIosGitMerge } from "react-icons/io";
+import { motion } from "framer-motion";
 
 const features = [
     { icon: <TiMicrophoneOutline size={30} className='text-blue-400'/>, heading: "Voice Trigger", para: "Activate and control your terminal with natural voice commands" },
@@ -10,6 +11,11 @@ const features = [
     { icon: <LuBrain size={30} className='text-blue-400'/>, heading: "NLP to CLI", para: "Advanced language processing converts speech to precise commands" },
     { icon: <IoIosGitMerge size={30} className='text-purple-400'/>, heading: "Git Integration", para: "Seamless voice control for all your Git workflows" }
 ]
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
+};
 
 const Feautres = () => {
     return (
@@ -27,9 +33,13 @@ const Feautres = () => {
   </p>
   <div className="grid grid-cols-1 md:grid-cols-4 px-6 gap-7 w-full max-w-7xl">
     {features.map((item, index) => (
-      <div
+      <motion.div
         key={index}
         className="bg-[#1a1025] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/50 transition-all hover:shadow-lg hover:shadow-purple-500/10"
+        variants={fadeInUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
       >
         <div className="w-12 h-12 rounded-lg bg-[#251a35] flex items-center justify-center mb-4 text-purple-300">
           {item.icon}
@@ -38,7 +48,7 @@ const Feautres = () => {
           {item.heading}
         </h3>
         <p className="text-sm text-gray-400">{item.para}</p>
-      </div>
+      </motion.div>
     ))}
   </div>
 </div>

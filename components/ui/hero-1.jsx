@@ -32,17 +32,12 @@ const Hero1 = () => {
         <div className="w-[10rem] h-[30rem]  bg-linear-90 from-white to-blue-300"></div>
       </div>
 
-
-
-
       {/* Header */}
-        <HeroContent/>
-
-          <Feautres/>
-          <Command/>
-          <How/>
-          <TechStack/>
-    
+      <HeroContent />
+      <Feautres />
+      <Command />
+      <How />
+      <TechStack />
     </div>
   );
 };
