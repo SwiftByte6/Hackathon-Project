@@ -57,7 +57,7 @@ export default function TechStack() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Built With Modern Tools</h2>
+          <h2 className="text-4xl md:text-5xl font-bold  mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">Built With Modern Tools</h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             VoiceCLI is crafted using powerful and scalable technologies.
           </p>
