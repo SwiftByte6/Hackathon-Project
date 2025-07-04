@@ -39,11 +39,11 @@ const How = () => {
                     aria-label="Section heading"
                 >
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                        Powerful Features
+                        How It Works
                     </span>
                 </h2>
                 <p className="text-gray-300 max-w-xl mx-auto text-center mb-10">
-                    VoiceCLI combines natural language processing with terminal functionality for a hands-free coding experience.
+                   Three simple steps to control your terminal with voice commands
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 px-6 gap-7 w-full max-w-7xl">
                     {howItWorks.map((item, index) => (
