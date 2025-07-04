@@ -38,15 +38,16 @@ const techStack = [
     name: "GitHub API",
     description: "Automation, versioning",
     icon: FaGithub,
-    color: "bg-black",
-    borderColor: "border-gray-700/30",
+    color: "bg-blue-500",
+    borderColor: "border-blue-500/30",
+ 
   },
   {
     name: "Gemini",
     description: "AI/LLM integration",
     icon: RiGeminiLine, // fallback icon
-    color: "bg-blue-500",
-    borderColor: "border-blue-500/30",
+    color: "bg-black",
+    borderColor: "border-gray-700/30",
   },
 ]
 
