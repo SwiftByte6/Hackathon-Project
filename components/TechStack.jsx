@@ -1,6 +1,23 @@
-import { FaPython, FaMicrophone, FaBrain, FaReact, FaBolt, FaPalette, FaGitAlt, FaVial } from "react-icons/fa"
+import { FaPython, FaNodeJs, FaGithub, FaRegStar } from "react-icons/fa"
+import { SiNextdotjs, SiTailwindcss } from "react-icons/si"
+import { RiGeminiLine } from "react-icons/ri";
+import { SiElevenlabs } from "react-icons/si";
 
 const techStack = [
+  {
+    name: "Next.js",
+    description: "React framework for production",
+    icon: SiNextdotjs,
+    color: "bg-gray-800",
+    borderColor: "border-gray-500/30",
+  },
+  {
+    name: "Tailwind CSS",
+    description: "Utility-first CSS framework",
+    icon: SiTailwindcss,
+    color: "bg-teal-500",
+    borderColor: "border-teal-500/30",
+  },
   {
     name: "Python",
     description: "Core logic, CLI tool",
@@ -8,54 +25,28 @@ const techStack = [
     color: "bg-green-500",
     borderColor: "border-green-500/30",
   },
+  
+ {
+  name: "Eleven Labs",
+  description: "AI Voice Generation & Voice Cloning",
+  icon: SiElevenlabs,
+  color: "bg-lime-600",
+  borderColor: "border-lime-600/30"
+}
+  ,
   {
-    name: "Whisper / Vosk",
-    description: "Speech-to-text",
-    icon: FaMicrophone,
+    name: "GitHub API",
+    description: "Automation, versioning",
+    icon: FaGithub,
+    color: "bg-black",
+    borderColor: "border-gray-700/30",
+  },
+  {
+    name: "Gemini",
+    description: "AI/LLM integration",
+    icon: RiGeminiLine, // fallback icon
     color: "bg-blue-500",
     borderColor: "border-blue-500/30",
-  },
-  {
-    name: "Langchain / OpenAI",
-    description: "Optional LLM processing",
-    icon: FaBrain,
-    color: "bg-purple-500",
-    borderColor: "border-purple-500/30",
-  },
-  {
-    name: "React",
-    description: "UI components",
-    icon: FaReact,
-    color: "bg-cyan-500",
-    borderColor: "border-cyan-500/30",
-  },
-  {
-    name: "Next.js",
-    description: "Framework",
-    icon: FaBolt,
-    color: "bg-gray-500",
-    borderColor: "border-gray-500/30",
-  },
-  {
-    name: "Tailwind CSS",
-    description: "Styling",
-    icon: FaPalette,
-    color: "bg-teal-500",
-    borderColor: "border-teal-500/30",
-  },
-  {
-    name: "Git & GitHub",
-    description: "Automation, versioning",
-    icon: FaGitAlt,
-    color: "bg-orange-500",
-    borderColor: "border-orange-500/30",
-  },
-  {
-    name: "Jest / Pytest",
-    description: "Testing",
-    icon: FaVial,
-    color: "bg-pink-500",
-    borderColor: "border-pink-500/30",
   },
 ]
 
