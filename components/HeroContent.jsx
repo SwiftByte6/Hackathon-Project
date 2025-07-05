@@ -8,7 +8,7 @@ import Image from 'next/image';
 const HeroContent = () => {
     // Replace with your actual download and GitHub URLs
     const handleDownload = () => {
-        window.open('https://github.com/Sukumarsawant/kuro-frontend/releases/download/asset/Kuro.zip','_blank');
+        window.open('https://github.com/Sukumarsawant/Kuro-CLI-/releases/download/asset/Kuro.zip','_blank');
     };
 
     const handleGithub = () => {
