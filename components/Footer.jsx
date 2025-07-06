@@ -30,10 +30,7 @@ const Footer = () => {
               <span>github.com/Kuro-CLI-</span>
             </a>
          
-            <div className="flex items-center gap-2 text-gray-300">
-              <FiCode className="text-lg" />
-              <span>Hackathon Project 2025</span>
-            </div>
+           
           </div>
         </div>
 

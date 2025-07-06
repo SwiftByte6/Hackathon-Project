@@ -17,16 +17,21 @@ const HeroContent = () => {
 
     return (
         <div className=' w-full '>
-            <header className="flex justify-between items-center p-6 md:px-20">
-                <div className="flex items-center gap-2">
-                    <div className="font-bold text-3xl">Kuro CLI</div>
-                </div>
-                 <button
-                            onClick={handleGithub}
-                            className="w-full flex gap-3 items-center justify-center  md:w-auto cursor-pointer rounded-full px-5 py-3 font-bold text-xl transition-colors duration-200 mt-2 md:mt-0">
-                            <FiGithub className='text-white' />
-                        </button>
+
+            <header className="flex flex-wrap md:flex-nowrap justify-between items-center px-6 md:px-20 py-4 gap-4">
+                {/* Logo */}
+                <div className="font-bold text-3xl text-white">Kuro CLI</div>
+
+                {/* GitHub Button */}
+                <button
+                    onClick={handleGithub}
+                    className="flex items-center gap-2 px-5 py-2 rounded-full text-white text-base md:text-lg font-semibold  hover:bg-purple-700 transition"
+                >
+                    <FiGithub size={20} />
+                   
+                </button>
             </header>
+
             {/* Main Content */}
             <motion.main
                 className="flex-1 flex flex-col items-center justify-center px-4 text-center">
@@ -99,13 +104,18 @@ const HeroContent = () => {
                             <p className="text-gray-300 text-center">
                                 Just say it, and let <span className="text-purple-400 font-bold">Kuro</span> do the work — from git commits to running tests.
                             </p>
-                            <pre className="text-sm text-left text-lime-300 mt-4 bg-purple-900/10 p-4 rounded w-full overflow-auto">
+                            <pre className="text-sm text-left text-green-300 mt-4 bg-purple-900/10 p-4 rounded w-full overflow-auto">
+                                <div className='flex gap-1.5 mb-2'>
+                                    <div className='w-3 h-3 rounded-full bg-red-400'></div>
+                                    <div className='w-3 h-3 rounded-full bg-yellow-400'></div>
+                                    <div className='w-3 h-3 rounded-full bg-green-400'></div>
+                                </div>
                                 <code>
-                                    🎤 "Commit my changes and run tests"{'\n'}
+                                    <span className='text-white'>🎤 "Commit my changes and run tests"{'\n'}</span>
                                     ✓ git add .{'\n'}
                                     ✓ git commit -m "feat: add new feature"{'\n'}
                                     ✓ npm run test{'\n'}
-        // Done!
+                                    <span className='text-purple-300/70'> // Done!</span>
                                 </code>
                             </pre>
                         </div>
