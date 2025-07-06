@@ -16,9 +16,11 @@ const HeroContent = () => {
     };
 
     return (
-        <div className=' w-full '>
+        <div className='  '>
 
-            <header className="flex flex-wrap md:flex-nowrap justify-between items-center px-6 md:px-20 py-4 gap-4">
+            <motion.header
+            initial={{w:0}}
+             className="flex flex-wrap md:flex-nowrap justify-between items-center px-6 md:px-20 py-4 gap-4">
                 {/* Logo */}
                 <div className="font-bold text-3xl text-white">Kuro CLI</div>
 
@@ -30,7 +32,7 @@ const HeroContent = () => {
                     <FiGithub size={20} />
                    
                 </button>
-            </header>
+            </motion.header>
 
             {/* Main Content */}
             <motion.main
@@ -44,7 +46,7 @@ const HeroContent = () => {
                     </div>
                     <div className='flex justify-center -mb-2 items-center gap-2'>
                         <span>
-                            <HiMiniSpeakerWave size={18} className='text-purple-600/70' />
+                            <HiMiniSpeakerWave size={18} className='text-yellow-400' />
                         </span>
                         <h2 className='text-sm md:text-base font-medium text-neutral-500 tracking-wide uppercase'>
                             10 Voice Profiles Available
