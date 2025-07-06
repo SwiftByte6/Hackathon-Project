@@ -27,7 +27,7 @@ const Footer = () => {
               className="flex items-center gap-2 text-gray-300 hover:text-purple-400 transition-colors"
             >
               <FiGithub className="text-lg" />
-              <span>github.com/voicecli</span>
+              <span>github.com/Kuro-CLI-</span>
             </a>
          
             <div className="flex items-center gap-2 text-gray-300">

@@ -3,12 +3,12 @@ import { easeIn, easeOut, motion } from 'framer-motion'
 import { FiGithub } from "react-icons/fi";
 import { FaGithub } from 'react-icons/fa6';
 import Image from 'next/image';
-
+import { HiMiniSpeakerWave } from "react-icons/hi2";
 
 const HeroContent = () => {
     // Replace with your actual download and GitHub URLs
     const handleDownload = () => {
-        window.open('https://github.com/Sukumarsawant/Kuro-CLI-/releases/download/asset/Kuro.zip','_blank');
+        window.open('https://github.com/Sukumarsawant/Kuro-CLI-/releases/download/asset/Kuro.zip', '_blank');
     };
 
     const handleGithub = () => {
@@ -19,12 +19,13 @@ const HeroContent = () => {
         <div className=' w-full '>
             <header className="flex justify-between items-center p-6 md:px-20">
                 <div className="flex items-center gap-2">
-                    <div className="font-bold text-3xl">Kuro CLi</div>
+                    <div className="font-bold text-3xl">Kuro CLI</div>
                 </div>
-                <button
-                    className="bg-white text-black hover:bg-gray-200 rounded-full px-4 py-2 text-sm cursor-pointer font-semibold">
-                    Get Started
-                </button>
+                 <button
+                            onClick={handleGithub}
+                            className="w-full flex gap-3 items-center justify-center  md:w-auto cursor-pointer rounded-full px-5 py-3 font-bold text-xl transition-colors duration-200 mt-2 md:mt-0">
+                            <FiGithub className='text-white' />
+                        </button>
             </header>
             {/* Main Content */}
             <motion.main
@@ -36,14 +37,23 @@ const HeroContent = () => {
                     className=" mx-auto space-y-15">
                     <div className="flex-1 flex justify-center">
                     </div>
+                    <div className='flex justify-center -mb-2 items-center gap-2'>
+                        <span>
+                            <HiMiniSpeakerWave size={18} className='text-purple-600/70' />
+                        </span>
+                        <h2 className='text-sm md:text-base font-medium text-neutral-500 tracking-wide uppercase'>
+                            10 Voice Profiles Available
+                        </h2>
+                    </div>
 
                     <h1 className="text-6xl md:text-9xl  font-bold leading-tight bg-gradient-to-b from-purple-900 via-purple-500  bg-clip-text text-transparent">
                         Talk. Code. Commit
                     </h1>
 
+
                     {/* Subtitle */}
                     <p className="md:text-2xl  text-xl">
-                       Build and manage your GitHub projects — hands-free, with voice commands powered by AI.
+                        Build and manage your GitHub projects — hands-free, with voice commands powered by AI.
                     </p>
 
                     <div className='space-x-0 md:space-x-5 flex flex-col md:flex-row items-center justify-center gap-3 md:gap-0'>
@@ -71,7 +81,7 @@ const HeroContent = () => {
                             <p className="text-gray-300 text-center">
                                 Tired of typing repetitive terminal commands?
                             </p>
-                            <pre className="text-sm text-left text-purple-200 mt-4 bg-purple-900/10 p-4 rounded w-full overflow-auto">
+                            <pre className="text-sm text-left text-lime-300 mt-4 bg-purple-900/10 p-4 rounded w-full overflow-auto">
                                 <code>
                                     $ git add .{'\n'}
                                     $ git commit -m "fix: update component"{'\n'}
@@ -89,7 +99,7 @@ const HeroContent = () => {
                             <p className="text-gray-300 text-center">
                                 Just say it, and let <span className="text-purple-400 font-bold">Kuro</span> do the work — from git commits to running tests.
                             </p>
-                            <pre className="text-sm text-left text-purple-200 mt-4 bg-purple-900/10 p-4 rounded w-full overflow-auto">
+                            <pre className="text-sm text-left text-lime-300 mt-4 bg-purple-900/10 p-4 rounded w-full overflow-auto">
                                 <code>
                                     🎤 "Commit my changes and run tests"{'\n'}
                                     ✓ git add .{'\n'}

@@ -34,9 +34,9 @@ const Hero1 = () => {
 
       {/* Header */}
       <HeroContent />
+      <How />
       <Feautres />
       <Command />
-      <How />
       <TechStack />
     </div>
   );
